@@ -10,25 +10,15 @@ import XCTest
 @testable import NoveCircularProgressBar
 
 class NoveCircularProgressBarTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  
+  private let progressBar = NoveCircularProgressBar(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
+  
+  func testUpdateProgress() {
+    XCTAssertEqual(progressBar.progress, 0.0)
+    progressBar.updateProgress(to: 0.75, animated: false)
+    XCTAssertEqual(progressBar.progress, 0.75)
+    progressBar.updateProgress(to: 0.25, animated: false)
+    XCTAssertEqual(progressBar.progress, 0.25)
+  }
+  
 }
