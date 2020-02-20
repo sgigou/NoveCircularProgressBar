@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		397086D023FE79C3002D13B1 /* NoveCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397086CF23FE79C3002D13B1 /* NoveCircularProgressBar.swift */; };
 		39B1EA6B23FDA68100CC2A67 /* NoveCircularProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1EA6123FDA68100CC2A67 /* NoveCircularProgressBar.framework */; };
 		39B1EA7023FDA68100CC2A67 /* NoveCircularProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1EA6F23FDA68100CC2A67 /* NoveCircularProgressBarTests.swift */; };
 		39B1EA7223FDA68100CC2A67 /* NoveCircularProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1EA6423FDA68100CC2A67 /* NoveCircularProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		397086CF23FE79C3002D13B1 /* NoveCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoveCircularProgressBar.swift; sourceTree = "<group>"; };
 		39B1EA6123FDA68100CC2A67 /* NoveCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoveCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1EA6423FDA68100CC2A67 /* NoveCircularProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoveCircularProgressBar.h; sourceTree = "<group>"; };
 		39B1EA6523FDA68100CC2A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				39B1EA6423FDA68100CC2A67 /* NoveCircularProgressBar.h */,
+				397086CF23FE79C3002D13B1 /* NoveCircularProgressBar.swift */,
 				39B1EA6523FDA68100CC2A67 /* Info.plist */,
 			);
 			path = NoveCircularProgressBar;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					39B1EA6023FDA68100CC2A67 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					39B1EA6923FDA68100CC2A67 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397086D023FE79C3002D13B1 /* NoveCircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		39B1EA7623FDA68100CC2A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.novesoft.NoveCircularProgressBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		39B1EA7723FDA68100CC2A67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
@@ -390,6 +398,7 @@
 		39B1EA7923FDA68100CC2A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
 				INFOPLIST_FILE = NoveCircularProgressBarTests/Info.plist;
@@ -408,6 +417,7 @@
 		39B1EA7A23FDA68100CC2A67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
 				INFOPLIST_FILE = NoveCircularProgressBarTests/Info.plist;
