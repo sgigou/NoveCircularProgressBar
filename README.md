@@ -4,10 +4,12 @@
 
 An animated circular progress bar for your Swift projects.
 
-
 ## Features
 
+<img src="img/animation_loop.gif" alt="Animated circular progress bar" style="zoom: 33%;" />
+
 - [x] Fully animated progress bar.
+- [x] Can be used and customized in Interface Builder.
 - [x] Customize color, animation duration and size.
 - [x] Customize border size for bigger or smaller display.
 - [x] Is unit tested.
@@ -43,8 +45,62 @@ $ pod install
 
 ## Usage
 
+### Creating a new instance
 
+In Interface Builder, you can add a `UIView` to your interface, and set the custom class to `NoveCircularProgressBar`:
 
+<img src="img/bar_creation.png?raw=true" alt="NoveCircularProgressBar custom class in Interface Builder" style="zoom:50%;" />
+
+You can also create the progress bar programmatically. To do so, simply import the module and use the following initializer:
+
+```swift
+import NoveCircularProgressBar
+
+let progressBar = NoveCircularProgressBar(frame: CGRect(x: 0, y: 0, width: 24, height:  24))
+```
+
+Then, add the progress bar to its parent:
+
+```swift
+parentView.addSubview(progressBar)
+```
+
+### Configuration
+
+The progress bar is composed of a static border and an animated progress bar.
+
+![bar_structure](img/bar_structure.png)
+
+`NoveCircularProgressBar` is configurable to match your app requirements. You can adjust the following settings:
+
+* `color` will change the progress bar color and its border color.
+* `speed` represents the duration of the animation for the progress bar to go from 0.0 to 1.0.
+* `lineWidth` represents the border thickness and the space between the border and the progress bar.
+
+You can set those properties in the Interface Builder:
+
+<img src="/Users/sgigou/Dev/Pods/NoveCircularProgressBar/img/bar_configuration.png" alt="bar_configuration" style="zoom:50%;" />
+
+Or you can set them programmatically once your bar is instanciated:
+
+```swift
+progressBar.lineWidth = 2.0
+progressBar.color = .systemBlue
+progressBar.speed = 1.0
+```
+
+### Percentage update
+
+Once your progress bar is created — and configured — you can update the displayed percentage by calling:
+
+```swift
+progressBar.updateProgress(to: percentage, animated: true)
+```
+
+With the following parameters
+
+* `to` is the new percentage to display (between 0.0 and 1.0),
+* `animated` tells the component to play an animation or to jump to its destination.
 
 ## Credits
 
