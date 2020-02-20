@@ -102,15 +102,14 @@ import UIKit
    */
   public func updateProgress(to percentage: Double, animated: Bool) {
     if percentage == progress { return }
-    let animation = CABasicAnimation(keyPath: "strokeEnd")
-    animation.fillMode = .both
-    animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-    animation.isRemovedOnCompletion = false
-    let duration = animated ? calculateDuration(from: progress, to: percentage) : 0.0
-    animation.duration = duration
-    animation.fromValue = progress
-    animation.toValue = percentage
-    progressLayer.add(animation, forKey: NoveCircularProgressBar.animationKey)
+    CATransaction.begin()
+    if animated {
+      CATransaction.setAnimationDuration(calculateDuration(from: progress, to: percentage))
+    } else {
+      CATransaction.setDisableActions(true)
+    }
+    progressLayer.strokeEnd = CGFloat(percentage)
+    CATransaction.commit()
     progress = percentage
   }
   
