@@ -6,7 +6,9 @@ An animated circular progress bar for your Swift projects.
 
 ## Features
 
-<img src="img/animation_loop.gif" alt="Animated circular progress bar" style="zoom: 33%;" />
+<p align="center">
+  <img src="img/animation_loop.gif" alt="Animated circular progress bar" width=150 />
+</p>
 
 - [x] Fully animated progress bar.
 - [x] Can be used and customized in Interface Builder.
@@ -49,7 +51,9 @@ $ pod install
 
 In Interface Builder, you can add a `UIView` to your interface, and set the custom class to `NoveCircularProgressBar`:
 
-<img src="img/bar_creation.png?raw=true" alt="NoveCircularProgressBar custom class in Interface Builder" style="zoom:50%;" />
+<p align="center">
+  <img src="img/bar_creation.png?raw=true" alt="NoveCircularProgressBar custom class in Interface Builder" width=256 />
+</p>
 
 You can also create the progress bar programmatically. To do so, simply import the module and use the following initializer:
 
@@ -69,7 +73,10 @@ parentView.addSubview(progressBar)
 
 The progress bar is composed of a static border and an animated progress bar.
 
-![bar_structure](img/bar_structure.png)
+<p align="center">
+  <img src="img/bar_structure.png?raw=true" alt="NoveCircularProgressBar structure" width=126 />
+</p>
+
 
 `NoveCircularProgressBar` is configurable to match your app requirements. You can adjust the following settings:
 
@@ -79,7 +86,9 @@ The progress bar is composed of a static border and an animated progress bar.
 
 You can set those properties in the Interface Builder:
 
-<img src="/Users/sgigou/Dev/Pods/NoveCircularProgressBar/img/bar_configuration.png" alt="bar_configuration" style="zoom:50%;" />
+<p align="center">
+  <img src="img/bar_configuration.png" alt="bar_configuration" width=255 />
+</p>
 
 Or you can set them programmatically once your bar is instanciated:
 
