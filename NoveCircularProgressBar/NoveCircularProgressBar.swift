@@ -22,7 +22,7 @@ import UIKit
   }
   @IBInspectable public var speed: Double = 1.0
   
-  private(set) var progress: Double = 0.0
+  public private(set) var progress: Double = 0.0
   
   private static let animationKey = "ProgressAnimation"
   
