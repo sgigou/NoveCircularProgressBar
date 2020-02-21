@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/NoveCircularProgressBar.svg?style=flat)](https://cocoapods.org/pods/NoveCircularProgressBar) [![License](https://img.shields.io/cocoapods/l/NoveCircularProgressBar.svg?style=flat)](https://cocoapods.org/pods/NoveCircularProgressBar) [![Platform](https://img.shields.io/cocoapods/p/NoveCircularProgressBar.svg?style=flat)](https://cocoapods.org/pods/NoveCircularProgressBar)
 
-An animated circular progress bar for your Swift projects.
+An animated circular progress bar for your iOS projects in Swift.
 
 ## Features
 
@@ -20,9 +20,6 @@ An animated circular progress bar for your Swift projects.
 ## Requirements
 
 - iOS 9.0+
-- Mac OS X 10.15+
-- WatchOS 2.0+
-- TV OS 9.0+
 
 
 ## Installation

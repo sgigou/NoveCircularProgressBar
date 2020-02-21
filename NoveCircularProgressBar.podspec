@@ -10,9 +10,6 @@ Pod::Spec.new do |spec|
   spec.author = { "Steve Gigou" => "steve@gigou.fr" }
   spec.social_media_url = "https://twitter.com/SteveGigou"
   spec.ios.deployment_target = "9.0"
-  spec.osx.deployment_target = "10.15"
-  spec.watchos.deployment_target = "2.0"
-  spec.tvos.deployment_target = "9.0"
   spec.source = { :git => "https://github.com/sgigou/NoveCircularProgressBar.git", :tag => "#{spec.version}" }
   spec.source_files  = "NoveCircularProgressBar"
   spec.swift_versions = "5.0"
